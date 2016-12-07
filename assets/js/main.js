@@ -154,7 +154,7 @@
 						var xhr = new XMLHttpRequest();
 						var email = $email.value;
 
-						xhr.open('GET', "http://dexy.io:8082/signup/email/"+email, true);
+						xhr.open('GET', "http://dexy.io:8082/signup/subscribe_email/"+email, true);
 						xhr.send();
 						xhr.onreadystatechange = function(e) {
 					    if (xhr.readyState == 4) {
