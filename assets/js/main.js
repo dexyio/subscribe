@@ -153,8 +153,8 @@
 
 						var xhr = new XMLHttpRequest();
 						var email = $email.value;
-
-						xhr.open('GET', "https://www.dexy.io/signup/subscribe_email/"+email, true);
+						var url = "https://www.dexy.io/signup/"+email+"/?_fun=subscribe_email"
+						xhr.open('GET', url, true);
 						xhr.send();
 						xhr.onreadystatechange = function(e) {
 					    if (xhr.readyState == 4) {
